@@ -1,0 +1,179 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul,
+ol {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a,
+input,
+button,
+textarea,
+button {
+  outline: transparent;
+}
+
+body {
+  font-family: 'Alegreya SC', serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #000;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.header__img {
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.header__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 54px;
+  color: #770909;
+  letter-spacing: 0.52em;
+  margin-bottom: 50px;
+}
+
+.header__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 100px;
+}
+
+.header__item {
+  border: 2px solid transparent;
+  padding: 5px;
+  transition: all .5s;
+}
+
+.header__item:hover {
+  border-radius: 15px;
+  border-color: #770909;
+}
+
+.header__data {
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0.42em;
+  color: #770909;
+}
+
+@media (max-width: 992px) {
+  .header__list {
+    margin-bottom: 100px;
+  }
+    .header__social {
+      width: 80px;
+      height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 0.50em;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__img {
+    width: 80%;
+  }
+
+  .header__title {
+    padding: 0 5px;
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 0.28em;
+  }
+
+  .header__list {
+    /* margin-bottom: 80px; */
+  }
+
+  .header__social {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .header__data {
+    margin-top: auto;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 375px) {
+  .header__title {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.28em;
+  }
+
+  .header__list {
+    margin-bottom: 50px;
+  }
+}
